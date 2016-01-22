@@ -69,6 +69,8 @@
 		AE6B01881C2A445800950BB2 /* UIViewController+UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FAD3A1C1ECA4200B5289B /* UIViewController+UnwindSegue.swift */; };
 		AE6B01891C2A445C00950BB2 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FAD3C1C1ED1EC00B5289B /* DismissSegue.swift */; };
 		AE74D6D71C166FB100718E0E /* SideImageDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74D6D61C166FB100718E0E /* SideImageDesignable.swift */; };
+		AE7CCDD91C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CCDD81C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift */; };
+		AE7CCDDA1C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CCDD81C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift */; };
 		AE81DAEE1C10F14C000AEB20 /* GradientDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81DAED1C10F14C000AEB20 /* GradientDesignable.swift */; };
 		AE81DB4E1C11DF00000AEB20 /* BlurEffectStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81DB4D1C11DF00000AEB20 /* BlurEffectStyle.swift */; };
 		AE81DB501C12E060000AEB20 /* RotationDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81DB4F1C12E060000AEB20 /* RotationDesignable.swift */; };
@@ -134,6 +136,7 @@
 		AE6B01551C2A082300950BB2 /* IBAnimatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBAnimatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6C66FF1BFBF93500134A35 /* IBAnimatableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBAnimatableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE74D6D61C166FB100718E0E /* SideImageDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideImageDesignable.swift; sourceTree = "<group>"; };
+		AE7CCDD81C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSKeyedUnarchiver+IBAnimatable.swift"; sourceTree = "<group>"; };
 		AE81DAED1C10F14C000AEB20 /* GradientDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientDesignable.swift; path = IBAnimatable/GradientDesignable.swift; sourceTree = SOURCE_ROOT; };
 		AE81DB4D1C11DF00000AEB20 /* BlurEffectStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurEffectStyle.swift; path = IBAnimatable/BlurEffectStyle.swift; sourceTree = SOURCE_ROOT; };
 		AE81DB4F1C12E060000AEB20 /* RotationDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RotationDesignable.swift; path = IBAnimatable/RotationDesignable.swift; sourceTree = SOURCE_ROOT; };
@@ -186,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0FAD3A1C1ECA4200B5289B /* UIViewController+UnwindSegue.swift */,
+				AE7CCDD81C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift */,
 			);
 			name = extension;
 			sourceTree = "<group>";
@@ -469,6 +473,7 @@
 				AE6B01881C2A445800950BB2 /* UIViewController+UnwindSegue.swift in Sources */,
 				AE6B01771C2A444900950BB2 /* TintDesignable.swift in Sources */,
 				AE6B01851C2A445100950BB2 /* DesignableGradientView.swift in Sources */,
+				AE7CCDDA1C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift in Sources */,
 				AE6B01781C2A444900950BB2 /* BarButtonItemDesignable.swift in Sources */,
 				AE6B01641C2A444000950BB2 /* BorderSide.swift in Sources */,
 				AE6B016B1C2A444900950BB2 /* CornerDesignable.swift in Sources */,
@@ -496,6 +501,7 @@
 				AE0FADAB1C20357C00B5289B /* StatusBarDesignable.swift in Sources */,
 				AE0FAD3B1C1ECA4200B5289B /* UIViewController+UnwindSegue.swift in Sources */,
 				AED1A11B1BFE983A001346FA /* AnimationType.swift in Sources */,
+				AE7CCDD91C524AB6001E7EC1 /* NSKeyedUnarchiver+IBAnimatable.swift in Sources */,
 				AE8C53AE1C0F111600A775AF /* DesignableGradientView.swift in Sources */,
 				AED1A11E1BFE983A001346FA /* PaddingDesignable.swift in Sources */,
 				AED1A1171BFE983A001346FA /* AnimatableImageView.swift in Sources */,
