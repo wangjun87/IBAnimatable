@@ -13,6 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    let originalSelector = Selector("setValue:forUndefinedKey:")
+    let swizzledSelector = Selector("iba_setValue:forUndefinedKey:")
+    
+    let originalMethod = class_getInstanceMethod(NSKeyedUnarchiver.self, originalSelector)
+    let swizzledMethod = class_getInstanceMethod(NSKeyedUnarchiver.self, swizzledSelector)
+    
+    let didAddMethod = class_addMethod(NSKeyedUnarchiver.self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
+    
+    if didAddMethod {
+      class_replaceMethod(NSKeyedUnarchiver.self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+    } else {
+      method_exchangeImplementations(originalMethod, swizzledMethod)
+    }
+
     return true
   }
 
