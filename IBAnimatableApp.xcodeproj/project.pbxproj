@@ -264,7 +264,6 @@
 		AE6F18761BFD4A3200CFDF4F /* view */ = {
 			isa = PBXGroup;
 			children = (
-				AED1A10E1BFE983A001346FA /* AnimatableView.swift */,
 				AE3C54481C2180D500829B10 /* AnimatableBarButtonItem.swift */,
 				AED1A1091BFE983A001346FA /* AnimatableButton.swift */,
 				AE0B0FEB1C26397700E36B78 /* AnimatableCheckBox.swift */,
@@ -275,6 +274,7 @@
 				AE3C54441C21439100829B10 /* AnimatableTableViewCell.swift */,
 				AED1A10C1BFE983A001346FA /* AnimatableTextField.swift */,
 				AED1A10D1BFE983A001346FA /* AnimatableTextView.swift */,
+				AED1A10E1BFE983A001346FA /* AnimatableView.swift */,
 				AE8C53AD1C0F111600A775AF /* DesignableGradientView.swift */,
 				AEEE200C1C18D10C00AD033B /* DesignableNavigationBar.swift */,
 			);
