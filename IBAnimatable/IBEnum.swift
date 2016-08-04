@@ -9,7 +9,7 @@ import Foundation
 
 /**
  A protocol provides extension method for converting `String` into `enum`.
- Because `@IBInspectable` property can not support `enum` directly. To provide both `enum` API in code and `@IBInspectable` supported type `String` in Interface Builder, we use `IBEnum` to bridge Swift `enum` and `String`
+ Because `@IBInspectable` property can not support `enum` directly. To provide both `enum` API in code and `@IBInspectable` supported type `String` in Interface Builder, we use `IBEnum` to bridge Swift `enum` and `String`.
  */
 public protocol IBEnum {
   /**
@@ -17,9 +17,21 @@ public protocol IBEnum {
    
    - Parameter string: The optional string to be converted into `enum`.
    */
-  init?(string: String?)
+  init(string: String?)
 }
 
+/**
+ A protocol provides extension method for converting `String` into system built-in `enum`s. Because some string values can not convert into the system built-in enum option. The failable `init` method will return `nil`.
+ Because `@IBInspectable` property can not support `enum` directly. To provide both `enum` API in code and `@IBInspectable` supported type `String` in Interface Builder, we use `IBEnum` to bridge Swift `enum` and `String`.
+ */
+public protocol IBOptionalEnum {
+  /**
+   Failable initializer to initializes a swift `enum` with provided optional string. If the string value can not convert into the option of the enum, then return `nil`
+   
+   - Parameter string: The optional string to be converted into `enum`.
+   */
+  init?(string: String?)
+}
 
 public extension IBEnum {
   /**
